@@ -38,7 +38,7 @@ const BackgroundTicker = () => {
         </div>
         <div className="text-center  text-white">
           <span className=" bg-green-500 px-4 py-0.5 pb-1 rounded-b-xl">
-            $ {Number(coins[0].priceUsd).toFixed(2)}
+            $ {Number(coins.length > 0 && coins[0].priceUsd).toFixed(2)}
           </span>
         </div>
       </div>
@@ -52,7 +52,7 @@ const BackgroundTicker = () => {
         </div>
         <div className="text-center  text-white">
           <span className=" bg-green-500 px-4 py-0.5 pb-1 rounded-b-xl">
-            $ {Number(coins[1].priceUsd).toFixed(2)}
+            $ {Number(coins.length > 0 && coins[1].priceUsd).toFixed(2)}
           </span>
         </div>
       </div>
